@@ -8,64 +8,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
-      <a href="/" class="logo text list">logo</a>
+      <div class="conteiner-header">
+        <div class="header-box">
+        <a href="/" class="logo text">logo</a>
       <nav class="naw">
-        <ul class="naw-list list">
-          <li><a href="" class="naw-list-item text"> Home</a></li>
-          <li><a href="" class="naw-list-item text">About us</a></li>
-          <li><a href="" class="naw-list-item text"> Services</a></li>
-          <li><a href="" class="naw-list-item text">Blogs</a></li>
+        <ul class="naw-list">
+          <li class="naw-list-item"><a href="" class="naw-list-link text"> Home</a></li>
+          <li class="naw-list-item"><a href="" class="naw-list-link text">About us</a></li>
+          <li class="naw-list-item"><a href="" class="naw-list-link text"> Services</a></li>
+          <li class="naw-list-item"><a href="" class="naw-list-link text">Blogs</a></li>
         </ul>
       </nav>
+      <div class="button-box-header">
       <button type="button" class="header-btn">Gift Finder</button>
+      </div>
+      </div>
+    </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Find a gift for <br> your wife or <br> girlfriend</h1>
+        <div class="container-hero hero-box">
+          <div class="hero-box-content">
+          <h1 class="hero-title">Find a gift for <br> your wife or <br> girlfriend</h1>
         <p class="hero-text">Struggling to find a gift for your wife or girlfriend? No problem!</p>
+        <div class="button-box-hero">
         <button type="button" class="hero-btn">Find gift now</button>
+        </div>
+        </div>
         <img src="./image/image1.jpg" alt="couple" width="719px" />
+        </div>
       </section>
       <section class="section-about-us">
-        <img src="./image/image2.jpg" alt="Thanks" width="733.15px" />
+        <div class="container-about-us about-us-box">
+        <img src="./image/image2.jpg" alt="Thanks" width="705.15" />
+        <div class="about-us-box-content">
         <h2 class="about-us-title">How we work</h2>
         <p class="about-us-text">
           We’ve actually already asked hundreds of women what they want, and made a database with
           the results. All you have to do is take our short survey that only takes seconds, and our
           proprietary algorithm will match you with a few perfect gift options.
         </p>
+        <div class="button-box-about-us">
         <button type="button" class="about-us-btn">Learn More</button>
+        </div>
+        </div>
+      </div>
       </section>
-      <section class="services">
-        <h2 class="services-title">Gifts for all Occasions</h2>
+      <section class="services-section">
+        <div class="container">
+          <h2 class="services-title">Gifts for all Occasions</h2>
         <p class="services-text">“Try our web app to find the best gifts for all occasions”</p>
-        <ul class="services-list list">
+        <ul class="services-list">
           <li class="services-item">
             <img src="./image/birthday.jpg" alt="baloon" width="270px" />
-            <h3>Birthday</h3>
+            <div class="services-item-box">
+              <h3>Birthday</h3>
             <details class="services-details">
-              <summary>See More ›-</summary>
+              <summary>See More ›</summary>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minima vel quos,
               distinctio beatae necessitatibus, quaerat nesciunt error, laborum possimus culpa
               molestiae asperiores? Ad recusandae provident omnis nulla amet eum?
             </details>
+          </div>
           </li>
           <li class="services-item">
             <img src="./image/shoes.jpg" alt="shoes" width="270px" />
-            <h3>Anniversary</h3>
+            <div class="services-item-box"><h3>Anniversary</h3>
             <details class="services-details">
               <summary>See more</summary>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minima vel quos,
               distinctio beatae necessitatibus, quaerat nesciunt error, laborum possimus culpa
               molestiae asperiores? Ad recusandae provident omnis nulla amet eum?
             </details>
+          </div>
           </li>
           <li class="services-item">
             <img src="./image/gifts.jpg" alt="gift" width="270px" />
+            <div class="services-item-box">
             <h3>Valentine's Day</h3>
             <details class="services-details">
               <summary>See more</summary>
@@ -73,9 +97,11 @@
               distinctio beatae necessitatibus, quaerat nesciunt error, laborum possimus culpa
               molestiae asperiores? Ad recusandae provident omnis nulla amet eum?
             </details>
+            </div>
           </li>
           <li class="services-item">
             <img src="./image/Christmas.jpg" alt="Christmas" width="270px" />
+            <div class="services-item-box">
             <h3>Christmas</h3>
             <details class="services-details">
               <summary>See more</summary>
@@ -83,19 +109,25 @@
               distinctio beatae necessitatibus, quaerat nesciunt error, laborum possimus culpa
               molestiae asperiores? Ad recusandae provident omnis nulla amet eum?
             </details>
+            </div>
           </li>
         </ul>
+      </div>
       </section>
       <section class="action">
-        <h2 class="action-title">Ready to get started?</h2>
-        <p class="action-text">Sign up or contact us</p>
-        <ul class="action-list list">
+        <div class="action-box container">
+          <div class="action-content-box">
+            <h2 class="action-title">Ready to get started?</h2>
+            <p class="action-text">Sign up or contact us</p>
+          </div>
+        <ul class="action-list">
           <li><button type="button" class="action-btn">Find gift now</button></li>
           <li><button type="button" class="action-btn-second">how it works</button></li>
         </ul>
+      </div>
       </section>
       <section class="section-blog">
-        <h2 class="blog-title">Our Best Blogs Ever</h2>
+        <div class="container"><h2 class="blog-title">Our Best Blogs Ever</h2>
         <p class="blog-text">“Try our blog to find the best tips and tricks to select your gift”</p>
         <div class="blog-conteiner">
           <img src="./image/Couple2.jpg" alt="couple" width="400px" />
@@ -103,7 +135,7 @@
           <p>The best way to wish your wife</p>
           <a href="">Read more</a>
         </div>
-        <ul class="blog-list list">
+        <ul class="blog-list">
           <li class="blog-list-item">
             <h4>Database to find the gifts for your girlfriend</h4>
             <p>
@@ -131,24 +163,26 @@
             </details>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer-list list">
+      <div class="container">
+        <ul class="footer-list">
         <li><a href="" class="footer-list-item text">Home</a></li>
         <li><a href="" class="footer-list-item text">About</a></li>
         <li><a href="" class="logo text">Logo</a></li>
         <li><a href="" class="footer-list-item text">Service</a></li>
         <li><a href="" class="footer-list-item text">Blog</a></li>
       </ul>
-      <ul class="footer-list-social list">
+      <ul class="footer-list-social">
         <li><a href="">Facebook</a></li>
         <li><a href="">Twitter</a></li>
         <li><a href="">Instagram</a></li>
         <li><a href="">Youtube</a></li>
         <li><a href="">Pinterest</a></li>
       </ul>
-      <p>&#169 2010 — 2020 Privacy — Terms</p>
+      <p>&#169 2010 — 2020 Privacy — Terms</p></div>
     </footer>
   </body>
 </html>
